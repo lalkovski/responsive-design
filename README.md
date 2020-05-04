@@ -9,7 +9,7 @@ Starter Gatsby project from AirFleet - Designed for CodersClan front-end candida
 
 ## Specification and Assets
 
-- The assignment specification can be found [here]().
+- The assignment specification can be found [here](https://docs.google.com/document/d/1-EgMC8iQlJK8-39dLnMCk7OresMXEufWpZaJRTDuBxo/edit?usp=sharing).
 - The design assets can be found [here](https://www.figma.com/file/5VKefxcTiBOq07We6aMSwa/FE-Final-Test?node-id=0%3A2).
 
 ## Getting started
