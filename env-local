@@ -1,0 +1,14 @@
+# Required. The base URL of the WordPress site without the trailingslash and the protocol.
+WP_BASE_URL="ccreacttest.wpengine.com"
+
+# Required. The protocol of the WordPress site. This can be http or https.
+WP_PROTOCOL="https"
+
+# Optional. Username and password for the basic authentication of the WordPress site.
+WP_AUTH_HTACCESS_USER="demo"
+WP_AUTH_HTACCESS_PASS="e1a58d9086d0"
+
+# Optional. Turning this flag on prevents the self-signed certificate error in local development (used for local images).
+# Read more - https://www.gatsbyjs.org/packages/gatsby-source-wordpress/?=wordpress#self-signed-certificates
+# DO NOT TURN THIS ON IN PRODUCTION
+NODE_TLS_REJECT_UNAUTHORIZED=0

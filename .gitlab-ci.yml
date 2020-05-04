@@ -1,0 +1,15 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+    - .yarn/
+
+build:
+  script:
+    - yarn config set cache-folder .yarn
+    - yarn install --pure-lockfile
+    - yarn run build
+  artifacts:
+    paths:
+      - public
