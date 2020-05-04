@@ -24,7 +24,7 @@ src
 - `[COMPONENT_NAME].js` (*e.g.* `title.js`)
 The main component file - should hold the React Component logic.
 - `[COMPONENT_NAME].fragment.js` (*e.g.* `title.fragment.js`)
-The fragment file specifying the GraphQL query scheme for the component. This will tell Gatsby how to retrieve the needed data for the component from the GraphQL data tree ([read more about the ACF data in GraphQL](../acf/understanding-acf.md#acf-data-structure-in-graphql).
+The fragment file specifying the GraphQL query scheme for the component. This will tell Gatsby how to retrieve the needed data for the component from the GraphQL data tree ([read more about the ACF data in GraphQL](../acf/understanding-acf.md#acf-data-structure-in-graphql)).
 - `index.js`
 Usually contains one line to export the main React file (for better readability within `import` statements in other files). 
 Example: `export { default } from './myComponent.js'`

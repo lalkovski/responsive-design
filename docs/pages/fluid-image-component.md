@@ -36,7 +36,7 @@ import FluidImage from "../../theme/src/components/fluidImage";
 const Example = ({ illustration, ...props }) => {
   return (
     <>
-	  ...
+      ...
 
       {illustration.image && <FluidImage {...illustration.image} />}
 			

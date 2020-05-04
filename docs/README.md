@@ -1,8 +1,8 @@
 # Using the AirFleet Theme
 
-The AirFleet Theme Plugin **supports automatic [ACF](https://www.advancedcustomfields.com/) data fetching and dynamic section building for pages. For every page built on WP the theme creates a visual representation automatically, given that the ACF scheme was built according to the recommended data structure.
+The AirFleet Theme Plugin supports automatic [ACF](https://www.advancedcustomfields.com/) data fetching and dynamic section building for pages. For every page built on WP the theme creates a visual representation automatically, given that the ACF scheme was built according to the recommended data structure.
 
-> **This means that there's no need to build pages within Gatsby, just the required sections and components (assuming they don't already exist) and the theme will build them for you automagically.**
+> **This means that there's no need to build pages within Gatsby, just the required sections and components (assuming they don't already exist), and the theme will build them for you automagically.**
 
 **Where can I access created pages?**
 

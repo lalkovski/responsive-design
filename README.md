@@ -1,8 +1,6 @@
 # AirFleet Gatsby Starter
 
-Starter Gatsby project from AirFleet.
-
-Designed for CodersClan front-end candidates.
+Starter Gatsby project from AirFleet - Designed for CodersClan front-end candidates.
 
 ## Requirements
 
