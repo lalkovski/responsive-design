@@ -12,7 +12,6 @@ const createPagesConfig = require('./gatsby/node/createPagesConfig')
 const createPostsConfig = require('./gatsby/node/createPostsConfig')
 const createCustomPostTypesConfig = require('./gatsby/node/createCPTConfig');
 
-const createMediaResolver = require('./gatsby/node/resolvers/createMediaResolver');
 const menuSubItemType = require('./gatsby/node/types/menuSubItemType');
 
 exports.createPages = async ({ graphql, actions, reporter }, options) => {
@@ -24,19 +23,6 @@ exports.createPages = async ({ graphql, actions, reporter }, options) => {
     if(customPostTypes && customPostTypes.length)
       for(const postType of customPostTypes)
         await createPages({ graphql, actions, reporter }, createCustomPostTypesConfig(postType))
-}
-
-exports.createResolvers = async (
-  {
-      actions,
-      cache,
-      createNodeId,
-      createResolvers,
-      store,
-      reporter,
-  }
-) => {
-  await createMediaResolver({ actions, cache, createNodeId, createResolvers, store, reporter });
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
