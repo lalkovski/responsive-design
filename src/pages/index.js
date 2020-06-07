@@ -1,51 +1,73 @@
+/* eslint-disable react/display-name */
 import React from "react"
-import Layout from '../../theme/src/components/layout/layout';
-import { graphql, Link } from "gatsby"
+import Layout from "../../theme/src/components/layout/layout"
+import Home from "../sections/home/home"
+import { graphql } from "gatsby"
+import PropTypes from "prop-types"
+import "./index.scss"
 
-const PostItem = ({ node }) => {
-  return (
-    <>
-      <h3>
-        <Link to={`/${node.slug}`}>{node.title}</Link>
-      </h3>
-      <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-    </>
-  )
-}
-
-const PostList = ({ edges }) => {
-  return (
-    <ul>
-      {edges.map(({ node }) => (
-        <li key={node.slug}>
-          <PostItem node={node} />
-        </li>
-      ))}
-    </ul>
-  )
-}
-
-export default ({ data }) => {
+const Index = ({ data }) => {
+  const content = data.allWordpressPage.edges[0].node.children
   return (
     <Layout>
-      <h1>Home</h1>
-      <section>
-        <h2>Pages</h2>
-        <PostList edges={data.allWordpressPage.edges} />
-      </section>
+      <Home content={content} />
     </Layout>
   )
 }
+
+Index.propTypes = {
+  data: PropTypes.object,
+}
+
+export default Index
+
 export const query = graphql`
   query {
-    allWordpressPage(sort: { fields: [date] }) {
-        edges {
-            node {
-                title
-                excerpt
-                slug
+    allWordpressPage {
+      edges {
+        node {
+          slug
+          ... on wordpress__PAGE {
+            id
+            children {
+              id
+              ... on WordPressAcf_feature {
+                title {
+                  title
+                }
+                description {
+                  text
+                }
+                icon {
+                  image {
+                    localFile {
+                      publicURL
+                    }
+                  }
+                }
+                illustration {
+                  image {
+                    localFile {
+                      publicURL
+                    }
+                  }
+                }
+                alignment
+                background {
+                  colors {
+                    color
+                    position
+                    opacity
+                  }
+                  angle
+                  opacity
+                  skew
+                }
+              }
             }
+          }
         }
+      }
     }
   }
 `
