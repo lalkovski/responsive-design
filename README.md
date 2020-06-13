@@ -1,29 +1,18 @@
-# AirFleet Gatsby Starter
+# Responsive design project
 
-Starter Gatsby project from AirFleet - Designed for CodersClan front-end candidates.
+The simple project I did for an interview with CodersClan.<br/>
+It was my first time using GatsbyJS.
 
-## Requirements
+## Screenshots
 
-- [Node.js](https://nodejs.org/en/).
-- [Yarn](https://yarnpkg.com/).
+![1](https://user-images.githubusercontent.com/37442651/84577486-e96e5380-adbc-11ea-8310-8619df5aef19.png)
+</br>
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/37442651/84577490-ec694400-adbc-11ea-80ba-a29d06afd090.png>
+</p>
 
-## Specification and Assets
+## Built With
 
-- The assignment specification can be found [here](https://docs.google.com/document/d/1-EgMC8iQlJK8-39dLnMCk7OresMXEufWpZaJRTDuBxo/edit?usp=sharing).
-- The design assets can be found [here](https://www.figma.com/file/5VKefxcTiBOq07We6aMSwa/FE-Final-Test?node-id=0%3A2).
-
-## Getting started
-
-- Run `yarn` to install and build dependencies.
-- Copy the `env-local` file to `.env` by running `cp env-example .env`
-- Run `yarn develop` to start development.
-
-## Documentation
-
-**Before you start - make sure you've thoroughly read the [Documentation](docs/README.md) in the `docs` folder.**
-
-You can find detailed information in the docs about using this project, including:
- - Setting up
- - Understanding the data structure
- - Building Page Section and Components
- - Adding Images to Pages
+- [React](https://reactjs.org/docs/) - The web framework used
+- [GatsbyJS](https://www.gatsbyjs.org/) - Used for development of the project
+- [SASS](https://sass-lang.com/) - Used for styles on the project
