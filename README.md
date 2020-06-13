@@ -6,7 +6,10 @@ It was my first time using GatsbyJS.
 ## Screenshots
 
 ![1](https://user-images.githubusercontent.com/37442651/84577486-e96e5380-adbc-11ea-8310-8619df5aef19.png)
-![2](https://user-images.githubusercontent.com/37442651/84577490-ec694400-adbc-11ea-80ba-a29d06afd090.png)
+</br>
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/37442651/84577490-ec694400-adbc-11ea-80ba-a29d06afd090.png>
+</p>
 
 ## Built With
 
