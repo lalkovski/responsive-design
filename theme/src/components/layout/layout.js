@@ -1,14 +1,21 @@
 import React from "react"
-import Footer from "./footer"
-import Header from "./header"
+import PropTypes from "prop-types"
+// import Footer from "./footer"
+// import Header from "./header"
 import Main from "./main"
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Main>{children}</Main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
+
+Layout.propTypes = {
+  children: PropTypes.object,
+}
+
+export default Layout

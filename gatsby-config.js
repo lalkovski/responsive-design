@@ -9,5 +9,6 @@ const themeAirfleet = require('./gatsby/config/themeAirfleet')
 module.exports = {
   plugins: [
     themeAirfleet(),
+    `gatsby-plugin-sass`
   ],
 }
