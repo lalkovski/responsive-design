@@ -1,6 +1,6 @@
-# Responsive design project
+# Responsive Design Project
 
-The simple project I did for an interview with CodersClan.<br/>
+A simple project I did for my interview with CodersClan.<br/>
 It was my first time using GatsbyJS.
 
 ## Screenshots
